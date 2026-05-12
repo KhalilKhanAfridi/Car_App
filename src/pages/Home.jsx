@@ -17,7 +17,7 @@ const Home = () => {
       setLoading(true);
 
       const response = await axios.get(
-        `${API_URL}?q=${query}&top_n=10&threshold=50`
+        `${API_URL}?q=${query}&top_n=20&threshold=50`
       );
 
       // 🔥 FIX: safely extract array
